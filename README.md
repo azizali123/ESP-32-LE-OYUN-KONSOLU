@@ -55,6 +55,7 @@ Bu tablo, ESP32 tabanlı Smart Console & Gamepad projesindeki tüm donanım bile
 | **NRF24L01 (SPI)**       | NRF_CE_PIN        | GPIO 4         | Chip Enable                      |
 |                          | NRF_CSN_PIN       | GPIO 15        | Chip Select                      |
 |                          | NRF_MISO_PIN      | GPIO 19        | SPI MISO                         |
+|                          | *SCK (ortak SPI)* | GPIO 18        | SPI Clock (OLED ile ortak)       |
 | **Joystick – Sol**       | SOL_JOY_X_PIN     | GPIO 34 (ADC)  | X ekseni analog giriş            |
 |                          | SOL_JOY_Y_PIN     | GPIO 35 (ADC)  | Y ekseni analog giriş            |
 |                          | SOL_JOY_BTN       | GPIO 25        | Buton (dijital giriş)            |
