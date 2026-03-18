@@ -72,6 +72,67 @@ Bu tablo, ESP32 tabanlı Smart Console & Gamepad projesindeki tüm donanım bile
 
 > ℹ️ Not: GPIO 34, 35, 36, 39 sadece analog giriş olarak kullanılabilir. Dijital çıkış desteklemez.
 
+6.# 📡 ESP32 WiFi Ayarları Rehberi
+
+Bu projede WiFi bağlantısı için gerekli olan **kullanıcı adı (SSID)** ve **şifre**, doğrudan kod içerisinden tanımlanmaktadır. Aşağıdaki adımları takip ederek kolayca ayarlayabilirsin.
+
+---
+
+## 🔧 WiFi Bilgileri Nereden Değiştirilir?
+
+Kod içerisinde aşağıdaki satırları bulman gerekiyor:
+
+```cpp
+char wifiSSID[32] = "MODEM KULLANICI ADINIZI BURAYA YAZIN";
+char wifiSifre[64] = "MODEM KULLANICI ŞİFRENİZİ BURAYA YAZIN";
+```
+
+---
+
+## ✍️ WiFi Bilgileri Nasıl Girilir?
+
+* `"MODEM KULLANICI ADINIZI BURAYA YAZIN"` kısmını kendi **WiFi adın (SSID)** ile değiştir
+* `"MODEM KULLANICI ŞİFRENİZİ BURAYA YAZIN"` kısmını kendi **WiFi şifren** ile değiştir
+
+### ✅ Örnek Kullanım:
+
+```cpp
+char wifiSSID[32] = "testWifi";
+char wifiSifre[64] = "12345678";
+```
+
+---
+
+## ⚠️ Önemli Not
+
+Eğer kod içerisinde WiFi bilgilerini eklerken problem yaşarsan:
+
+* ESP32’ye kodu yükle
+* Cihaz açıldıktan sonra menüye gir
+* **WiFi Ayarları** bölümünü aç
+* **WiFi adı (SSID)** kısmına kullanıcı adını gir
+* **Şifre** kısmına WiFi şifreni gir
+
+👉 Bu şekilde de bağlantı sağlayabilirsin.
+
+---
+
+## 💡 İpuçları
+
+* WiFi adı ve şifre **büyük/küçük harfe duyarlıdır**
+* ESP32 cihazları genellikle **2.4GHz WiFi** ile daha stabil çalışır
+* Şifrede boşluk veya özel karakter kullanıyorsan doğru yazdığına emin ol
+* Bağlantı sorunlarında modemine yakın olmayı dene
+
+---
+
+## 🚀 Sonuç
+
+WiFi bilgilerini doğru şekilde girdikten sonra cihaz otomatik olarak ağa bağlanacaktır ve sistemin WiFi modunda sorunsuz çalışacaktır.
+
+---
+
+
 ## 🎯 Kontroller
 - Joystick yönleri: yukarı, aşağı, sola, sağ
 - Menüde smooth scroll desteği
