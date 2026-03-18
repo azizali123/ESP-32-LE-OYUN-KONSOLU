@@ -163,9 +163,9 @@ int16_t solJoyMerkezX = 2048, solJoyMerkezY = 2048, sagJoyMerkezX = 2048,
 float emSolX = 0.5f, emSolY = 0.5f, emSagX = 0.5f, emSagY = 0.5f;
 float globalHassasiyet = 1.6f;
 
-char wifiSSID[32] = "SUPERONLINE_Wi-Fi_DE0F";
-char wifiSifre[64] = "GmKbvaqs5D";
-char pcIP[20] = "192.168.1.7";
+char wifiSSID[32] = "MODEM KULLANICI ADINIZI BURAYA YAZIN";
+char wifiSifre[64] = "MODEM KULLANICI ŞİFRENİZİ BURAYA YAZIN";
+char pcIP[20] = "BURAYA '192.XXX.X.X' BU KISMA YAZIN";
 bool wifiBagliMi = false, nrfAktif = false, bleBasladiMi = false;
 uint8_t nrfKanal = 75;
 uint8_t saatSaat = 5, saatDakika = 31, saatSaniye = 0, tarihGun = 13,
